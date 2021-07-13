@@ -1,0 +1,1 @@
+SELECT backup_start_date FROM backupset WHERE YEAR(backup_start_date) = YEAR(GETDATE()) AND MONTH(backup_start_date) = MONTH(GETDATE()) AND DAY(backup_start_date) = DAY(GETDATE()) AND description = "Backup Full CorporeRM" AND DATEPART(hour, backup_start_date) = 12 AND DATEPART(Minute, backup_start_date) = 30
